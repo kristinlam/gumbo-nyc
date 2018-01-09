@@ -1,0 +1,240 @@
+/*!
+ * Start Bootstrap - Agency v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/agency)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-agency/blob/master/LICENSE)
+ */
+body {
+  overflow-x: hidden;
+  font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+p {
+  line-height: 1.75; }
+
+a {
+  color: #fed136; }
+  a:hover {
+    color: #fec503; }
+
+.text-primary {
+  color: #fed136 !important; }
+
+.margin-bottom{
+  margin-bottom: 80px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+section {
+  padding: 100px 0; }
+  section h2.section-heading {
+    font-size: 60px;
+    margin-top: 0;}
+  }
+
+@media (min-width: 768px) {
+  section {
+    padding: 130px 0; } }
+
+::-moz-selection {
+  background: #0a3446;
+  text-shadow: none; }
+
+::selection {
+  background: #0a3446;
+  text-shadow: none; }
+
+img::selection {
+  background: transparent; }
+
+img::-moz-selection {
+  background: transparent; }
+
+body {
+  -webkit-tap-highlight-color: #eeeeee; }
+
+#mainNav {
+  background-color: #212529; }
+  #mainNav .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: white;
+    border: 0;
+    background-color: #0a3446;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  #mainNav .navbar-brand {
+    color: white;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+      color: #eeeeee; }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    font-size: 90%;
+    font-weight: 400;
+    padding: 0.75em 0;
+    letter-spacing: 1px;
+    color: white;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+    #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+      color: black; }
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent; }
+    #mainNav .navbar-brand {
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+    #mainNav .navbar-nav .nav-item .nav-link {
+      padding: 1.1em 1em !important; }
+    #mainNav.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: #212529; }
+      #mainNav.navbar-shrink .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0; } }
+
+header.masthead {
+  text-align: center;
+  color: white;
+  background-image: url("../img/Gumbo1.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+      padding-top: 300px;
+    padding-bottom: 200px}
+/*  header.masthead .intro-text {
+    padding-top: 150px;
+    padding-bottom: 100px;
+    font-size: 70px;
+    font-weight: 700;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }*/
+
+@media (min-width: 768px) { /* media query for desktop screens */
+/*  header.masthead .intro-text {
+    padding-top: 300px;
+    padding-bottom: 200px;
+    font-size: 95px;
+    font-weight: 700;
+    line-height: 75px;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif;}*/
+
+    header.masthead{
+    padding-top: 450px;
+    padding-bottom: 350px;
+    font-size: 95px;
+    font-weight: 700;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif;}
+}
+
+.service-heading {
+  margin: 15px 0;
+  text-transform: none; }
+
+#portfolio .portfolio-item {
+  right: 0;
+  margin: 0 0 15px; }
+  #portfolio .portfolio-item .portfolio-link {
+    position: relative;
+    display: block;
+    max-width: 400px;
+    margin: 0 auto;
+    cursor: pointer; }
+    #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-transition: all ease 0.5s;
+      -moz-transition: all ease 0.5s;
+      transition: all ease 0.5s;
+      opacity: 0;
+      background: rgba(34,35,42, 0.9); } /*edit portfolio hover background colors */
+      #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+        opacity: 1; }
+      #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        height: 20px;
+        margin-top: -12px;
+        text-align: center;
+        color: white; }
+        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+          margin-top: -12px; }
+        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+        #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+          margin: 0; }
+
+#portfolio * {
+  z-index: 2; }
+
+@media (min-width: 767px) {
+  #portfolio .portfolio-item {
+    margin: 0 0 30px; } }
+
+.team-member {
+  margin-bottom: 50px;
+  text-align: center; }
+  .team-member img {
+    width: 225px;
+    height: 225px;
+    border: 7px solid #fff; }
+  .team-member h4 {
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-transform: none; }
+  .team-member p {
+    margin-top: 0; }
+
+footer {
+  padding: 25px 0;
+  text-align: center;}
+  footer span.copyright {
+    font-size: 15px;
+    line-height: 40px;
+    text-transform: none;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+  footer ul.quicklinks {
+    font-size: 90%;
+    line-height: 40px;
+    margin-bottom: 0;
+    text-transform: none;
+    font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+ul.social-buttons {
+  margin-bottom: 0; }
+  ul.social-buttons li a {
+    font-size: 20px;
+    line-height: 40px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    color: white;
+    border-radius: 100%;
+    outline: none;
+    background-color: #212529; }
+    ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
+      background-color: black; }
