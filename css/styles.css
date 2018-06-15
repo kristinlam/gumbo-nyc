@@ -28,7 +28,7 @@ p.description{
 
 
 
-/* Link Hover Effect: Creates Sky Blue Underline */
+/* Link Hover Effect: Creates Light Blue Underline */
 
 a,a:visited,a:hover,a:active{
   -webkit-backface-visibility:hidden;
@@ -55,7 +55,7 @@ a.after:after{
 a.before:before,a.after:after{
   height:4px;
   width:0;
-  background:#7ad9d7; /*sky blue underline*/
+  background:#7ad9d7; /*Light Blue Underline*/
 }
 a.first:after{
   left:0;
@@ -66,7 +66,7 @@ a.before:hover:before,a.after:hover:after{
 
 
 
-/* Link Hover Effect: Creates Sky Blue Highlight */
+/* Link Hover Effect: Creates Light Blue Highlight */
 a.highlight {
   text-decoration:none;
   color: #7ad9d7;
@@ -76,7 +76,7 @@ a.highlight {
 
 
 a.highlight:hover {
-  background: #7ad9d7; /*sky blue*/
+  background: #7ad9d7; /*Light blue*/
   color: inherit;
 }
 
@@ -155,29 +155,6 @@ h4 {
   font-size: 30px;
 }
 
-/* media queries for game names */
-
-@media (min-width: 576px) {
-  .portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 768px) {
-.portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 992px) {
-.portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 1200px) {
-.portfolio-hover-content h3 {
-  }
-}
-
-
 /*------------------------------*/
 
 #studios h1, #portfolio h1 {
@@ -253,24 +230,11 @@ body {
         font-size: 1.25em;
         padding: 12px 0; } }
 
-/*.heroBanner{
-    background-image: url("../img/Gumbo1.png");
-    width:100%;
-    min-height: 300px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-  */
+
 @media (max-width: 480px) {
   h1.heading {
     font-size: 50px;
   }
-}
-
-@media (min-width: 768px) { /* media query for desktop screens */
-.heroBanner {
-   min-height: 700px;}
 }
 
 #portfolio .portfolio-item {
@@ -323,13 +287,6 @@ body {
     text-transform: none; }
   .team-member p {
     margin-top: 0; }
-
-
-
-
-
-
-
 
 
 footer {
