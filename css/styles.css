@@ -26,41 +26,23 @@ p.description{
 }
 
 
-/* Link Hover Effect: Creates Red Underline */
-
-a,a:visited,a:hover,a:active{
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:relative;
-  transition:0.5s color ease;
+/* Link Hover Effect: Creates Coral Highlight */
+a.highlight {
   text-decoration:none;
-  color:#7ad9d7;
+  color: #7ad9d7;
+  transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
-a.before:before,a.after:after{
-  content: "";
-  transition:0.5s all ease;
-  -webkit-backface-visibility:hidden;
-          backface-visibility:hidden;
-  position:absolute;
+
+
+a.highlight:hover {
+  background: #7ad9d7; /*coral*/
+  color: inherit;
 }
 
-/*makes underline on bottom of link*/
-a.after:after{
-  bottom:-2px;
-} 
+  background: #ef8b80; /*coral*/
 
-a.before:before,a.after:after{
-  height:4px;
-  width:0;
-  background:#d73444; /*red underline*/
-}
-a.first:after{
-  left:0;
-}
-a.before:hover:before,a.after:hover:after{
-  width:100%;
-}
+
 
 /*--------------------------------------------*/
 /* Containers for Portfolio/Projects and Studios */
@@ -315,10 +297,10 @@ footer {
   text-align: center;
   background-color: #212529;}
   footer span.copyright {
-    letter-spacing: 2px;
+    letter-spacing: 0.8px;
     color: white;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
     text-transform: uppercase;}
 
 ul.social-buttons {
