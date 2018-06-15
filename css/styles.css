@@ -11,7 +11,9 @@ body {
   height: 100%
   margin: 0;}
 
-
+#site-wrapper{
+  overflow-x:hidden;
+}
 
 p {
   line-height: 1.75;
@@ -22,7 +24,6 @@ p {
 p.description{
   font-size: 22px;
 }
-
 
 
 /* Link Hover Effect: Creates Red Underline */
