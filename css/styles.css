@@ -26,8 +26,6 @@ p.description{
 }
 
 
-
-
 /* Link Hover Effect: Creates Light Blue Underline */
 
 a,a:visited,a:hover,a:active{
@@ -280,13 +278,19 @@ body {
   .team-member img {
     width: 225px;
     height: 225px;
-  /*  border: 7px solid #fff;*/ }
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;}
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
     text-transform: none; }
   .team-member p {
     margin-top: 0; }
+
+.team-member img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 
 footer {
