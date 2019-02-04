@@ -48,7 +48,7 @@ a.before:before,a.after:after{
 /*makes underline on bottom of link*/
 a.after:after{
   bottom:-2px;
-} 
+}
 
 a.before:before,a.after:after{
   height:4px;
@@ -105,6 +105,7 @@ a.highlight:hover {
   max-width: 100%;
   padding:0;
   background-color: #212529;
+  text-align: center;
 }
 
 .col-centered{
