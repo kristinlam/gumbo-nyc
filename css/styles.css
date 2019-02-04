@@ -319,6 +319,9 @@ ul.social-buttons {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: #212529; }
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #7ad9d7; /*light blue*/ }
