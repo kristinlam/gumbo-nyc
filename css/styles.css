@@ -11,7 +11,9 @@ body {
   height: 100%
   margin: 0;}
 
-
+#site-wrapper{
+  overflow-x:hidden;
+}
 
 p {
   line-height: 1.75;
@@ -24,8 +26,7 @@ p.description{
 }
 
 
-
-/* Link Hover Effect: Creates Red Underline */
+/* Link Hover Effect: Creates Light Blue Underline */
 
 a,a:visited,a:hover,a:active{
   -webkit-backface-visibility:hidden;
@@ -47,12 +48,12 @@ a.before:before,a.after:after{
 /*makes underline on bottom of link*/
 a.after:after{
   bottom:-2px;
-} 
+}
 
 a.before:before,a.after:after{
   height:4px;
   width:0;
-  background:#d73444; /*red underline*/
+  background:#7ad9d7; /*Light Blue Underline*/
 }
 a.first:after{
   left:0;
@@ -60,6 +61,26 @@ a.first:after{
 a.before:hover:before,a.after:hover:after{
   width:100%;
 }
+
+
+
+/* Link Hover Effect: Creates Light Blue Highlight */
+a.highlight {
+  text-decoration:none;
+  color: #7ad9d7;
+  transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+
+
+
+a.highlight:hover {
+  background: #7ad9d7; /*Light blue*/
+  color: inherit;
+}
+
+  background: #ef8b80; /*coral*/
+
+
 
 /*--------------------------------------------*/
 /* Containers for Portfolio/Projects and Studios */
@@ -84,6 +105,7 @@ a.before:hover:before,a.after:hover:after{
   max-width: 100%;
   padding:0;
   background-color: #212529;
+  text-align: center;
 }
 
 .col-centered{
@@ -131,29 +153,6 @@ h3 {
 h4 {
   font-size: 30px;
 }
-
-/* media queries for game names */
-
-@media (min-width: 576px) {
-  .portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 768px) {
-.portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 992px) {
-.portfolio-hover-content h3 {
-  }
-}
-
-@media (min-width: 1200px) {
-.portfolio-hover-content h3 {
-  }
-}
-
 
 /*------------------------------*/
 
@@ -203,7 +202,7 @@ body {
     font-family: 'Unica One', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-weight: 400;
-    padding: 0.75em 0;
+    padding: 8px 0;
     color: white;}
 
 @media (min-width: 992px) {
@@ -230,23 +229,11 @@ body {
         font-size: 1.25em;
         padding: 12px 0; } }
 
-.heroBanner{
-    background-image: url("../img/Gumbo1.png");
-    min-height: 450px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-  
+
 @media (max-width: 480px) {
   h1.heading {
     font-size: 50px;
   }
-}
-
-@media (min-width: 768px) { /* media query for desktop screens */
-.heroBanner {
-   min-height: 900px;}
 }
 
 #portfolio .portfolio-item {
@@ -292,7 +279,8 @@ body {
   .team-member img {
     width: 225px;
     height: 225px;
-  /*  border: 7px solid #fff;*/ }
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;}
   .team-member h4 {
     margin-top: 25px;
     margin-bottom: 0;
@@ -300,12 +288,10 @@ body {
   .team-member p {
     margin-top: 0; }
 
-
-
-
-
-
-
+.team-member img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 
 
 footer {
@@ -313,10 +299,10 @@ footer {
   text-align: center;
   background-color: #212529;}
   footer span.copyright {
-    letter-spacing: 2px;
+    letter-spacing: 0.8px;
     color: white;
-    font-size: 15px;
-    line-height: 30px;
+    font-size: 12px;
+    line-height: 20px;
     text-transform: uppercase;}
 
 ul.social-buttons {
@@ -333,6 +319,9 @@ ul.social-buttons {
     color: white;
     border-radius: 100%;
     outline: none;
-    background-color: #212529; }
+    background-color: #212529;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
       background-color: #7ad9d7; /*light blue*/ }
