@@ -62,8 +62,8 @@ p.description {
   font-size: 22px;
 }
 
-a:link,
-a:visited {
+a:not(:has(img)):link,
+a:not(:has(img)):visited {
   text-decoration: none;
   position: relative;
   font-size: inherit;
@@ -71,13 +71,16 @@ a:visited {
   background-image: linear-gradient(#7ad9d7, #7ad9d7);
   background-position: 0 100%;
   background-repeat: no-repeat;
-  background-size: 0 2px;
+  background-size: 0% 3px;
   transition: background-size 0.3s;
+}
+
+a:not(:has(img)):hover {
+  background-size: 100% 3px;
 }
 
 a:hover {
   cursor: pointer;
-  background-size: 100% 2px;
 }
 
 section {
@@ -178,9 +181,6 @@ body {
 }
 #mainNav .logo {
   max-width: 120px;
-}
-#mainNav .logo a:hover {
-  text-decoration: none;
 }
 
 @media (min-width: 990px) {
