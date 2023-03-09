@@ -1,115 +1,10 @@
+/*--------------------------------------------*/
+/* Base Styles */
 body {
   overflow-x: hidden;
   font-family: 'Karla', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   height: 100%;
   margin: 0;
-}
-
-#site-wrapper {
-  overflow-x: hidden;
-}
-
-p {
-  line-height: 1.75;
-  font-size: 20px;
-  color: white;
-}
-
-p.description {
-  font-size: 22px;
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: relative;
-  transition: 0.5s color ease;
-  text-decoration: none;
-  color: #7ad9d7;
-}
-
-a.before:before,
-a.after:after {
-  content: '';
-  transition: 0.5s all ease;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  position: absolute;
-}
-
-a.after:after {
-  bottom: -2px;
-}
-
-a.before:before,
-a.after:after {
-  height: 4px;
-  width: 0;
-  background: #7ad9d7;
-}
-a.first:after {
-  left: 0;
-}
-a.before:hover:before,
-a.after:hover:after {
-  width: 100%;
-}
-
-a.highlight {
-  text-decoration: none;
-  color: #7ad9d7;
-  transition: background 0.1s cubic-bezier(0.33, 0.66, 0.66, 1);
-}
-
-a.highlight:hover {
-  background: #7ad9d7;
-  color: inherit;
-}
-
-/*--------------------------------------------*/
-/* Portfolio, Projects and Studios */
-
-@media only screen and (min-width: 1200px) {
-  #portfolio .container {
-    max-width: 90%;
-  }
-
-  #studios .container {
-    max-width: 80%;
-  }
-}
-
-/*-------------------------------------------*/
-
-#studios a {
-  text-transform: uppercase;
-}
-
-#location {
-  max-width: 100%;
-  padding: 0;
-  background-color: #212529;
-  text-align: center;
-}
-
-.col-centered {
-  float: none;
-  margin: 0 auto;
-}
-
-.bg-light-grey {
-  background-color: #565656;
-}
-
-.bg-blue {
-  background-color: #1b1f31;
-}
-
-section {
-  padding: 80px 0;
 }
 
 h1,
@@ -127,22 +22,101 @@ h5 {
 
 h1 {
   font-weight: 700;
-  font-size: 60px;
+  font-size: 48px;
 }
 
 h2 {
-  font-size: 50px;
+  font-size: 36px;
 }
 
 h3 {
-  font-size: 40px;
-}
-
-h4 {
   font-size: 30px;
 }
 
-/*------------------------------*/
+h4 {
+  font-size: 24px;
+}
+
+@media (min-width: 480px) {
+  h1 {
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 30px;
+  }
+}
+
+p {
+  line-height: 1.75;
+  font-size: 20px;
+  color: white;
+}
+
+p.description {
+  font-size: 22px;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  position: relative;
+  font-size: inherit;
+  color: #7ad9d7;
+  background-image: linear-gradient(#7ad9d7, #7ad9d7);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size 0.3s;
+}
+
+a:hover {
+  cursor: pointer;
+  background-size: 100% 2px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+hr {
+  border: 1px solid #ccc;
+  margin: 40px 0px;
+}
+
+.header {
+  height: 100vh;
+  background: url('../img/header.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*--------------------------------------------*/
+/* Portfolio, Projects and Studios */
+
+@media only screen and (min-width: 1200px) {
+  #portfolio .container {
+    max-width: 90%;
+  }
+
+  #studios .container {
+    max-width: 80%;
+  }
+}
+
+#studios a {
+  text-transform: uppercase;
+}
 
 #studios h1,
 #portfolio h1 {
@@ -158,9 +132,11 @@ h4 {
   margin-bottom: 10px;
 }
 
-hr {
-  border: 1px solid #ccc;
-  margin: 40px 0px;
+#location {
+  max-width: 100%;
+  padding: 0;
+  background-color: #212529;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -200,8 +176,14 @@ body {
   padding: 8px 0;
   color: white;
 }
+#mainNav .logo {
+  max-width: 120px;
+}
+#mainNav .logo a:hover {
+  text-decoration: none;
+}
 
-@media (min-width: 992px) {
+@media (min-width: 990px) {
   #mainNav {
     padding-top: 25px;
     padding-bottom: 25px;
@@ -229,11 +211,9 @@ body {
     font-size: 1.25em;
     padding: 12px 0;
   }
-}
 
-@media (max-width: 480px) {
-  h1.heading {
-    font-size: 50px;
+  #mainNav .logo {
+    max-width: 200px;
   }
 }
 
@@ -322,6 +302,7 @@ footer span.copyright {
   text-transform: uppercase;
 }
 
+/*--------------------------------------------*/
 ul.social-buttons {
   margin-bottom: 0;
 }
@@ -346,4 +327,19 @@ ul.social-buttons li a:active,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:hover {
   background-color: #7ad9d7;
+}
+
+/*--------------------------------------------*/
+/* Utility Classes */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+.bg-light-grey {
+  background-color: #565656;
+}
+
+.bg-blue {
+  background-color: #1b1f31;
 }
